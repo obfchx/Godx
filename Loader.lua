@@ -3080,7 +3080,7 @@ Setting = Library:Tab("Cài Đặt",7044233235)
            end
        end)
        
-       Setting:Toggle("Đặt điểm hồi sinh",true,function(value)
+       Setting:Toggle("Đặt điểm hồi sinh",false,function(value)
     _G.Set = value
 end)
 spawn(function()
