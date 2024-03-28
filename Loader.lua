@@ -4067,7 +4067,7 @@ end)
         end
     end)    
     
-    Main:Toggle("Triệu hồi tư lệnh bột",true,function(value)
+    Main:Toggle("Triệu hồi tư lệnh bột",false,function(value)
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CakePrinceSpawner",value)
     end)
     
@@ -8926,7 +8926,7 @@ end)
 
 Misc:Seperator("")
 
-Misc:Toggle("Tránh văng", true, function()
+Misc:Toggle("Tránh văng", false, function()
 local vu = game:GetService("VirtualUser")
 repeat wait() until game:IsLoaded() 
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -8937,7 +8937,7 @@ game:GetService("VirtualUser"):ClickButton2(Vector2.new())
 end)
 end)
 
-Misc:Toggle("Tự vào lại",true,function(value)
+Misc:Toggle("Tự vào lại",false,function(value)
     _G.AutoRejoin = value
 end)
 
